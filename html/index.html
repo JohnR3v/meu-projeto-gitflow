@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamShaper - Gestor de Tarefas SPA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- SweetAlert2 para notificações profissionais -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <main id="app">
+        <!-- O conteúdo dinâmico será injetado aqui via JavaScript -->
+        <div id="lista-projeto-estatico"></div>
+
+        <section style="margin-top: 20px;">
+            <h3>Adicionar Nova Tarefa</h3>
+            <form id="form-tarefa">
+                <input type="text" id="input-tarefa" placeholder="Digite a nova tarefa..." autocomplete="off">
+                <button type="submit">Adicionar</button>
+            </form>
+            <ul id="lista-tarefas" style="margin-top: 15px;"></ul>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
